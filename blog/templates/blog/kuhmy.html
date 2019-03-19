@@ -1,3 +1,4 @@
+{%load static%}
 <!DOCTYPE html>
 <html lang="es"> 
 	
@@ -6,8 +7,124 @@
     <meta charset="UTF-8">
     <meta name="title" content="Título de la WEB">
     <meta name="description" content="Descripción de la WEB">
-    <link rel="stylesheet" href="kuhmy.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+	 <style type="text/css">
+		 header{
+  background: rgba(0,0,0,0.9);
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+.wrapper {
+  width: 100%;
+  margin: auto;
+  overflow:hidden;
+}
+
+.contenido {
+  padding-top: 80px;
+}
+
+
+
+.fondo{
+	padding: 16px;
+    background-color: #000000;
+    color: #FFFFFF;
+      }
+
+.caja { 
+	width: 50%;
+	margin: 0 auto;
+	 }
+.centrado{
+	text-align: center;
+	}
+
+.justificado{
+	text-align: justify;
+	}
+.tamañotitulo{
+	font-size: 1cm
+	}
+.tamañocontacto{
+	font-size: 0.6cm
+	}
+
+#navegador ul{
+   list-style-type: none;
+   text-align: center;
+}
+#navegador li{
+   display: inline;
+   text-align: center;
+   margin: 0 10px 0 0;
+}
+#navegador li a {
+   padding: 4px 7px 2px 7px;
+   color: #FFFFFF;
+   background-color: #000000;
+   text-decoration: none;
+   font-family: Verdana;
+   font-size: large;
+}
+#navegador li a:hover{
+   background-color: #FFFFFF;
+   color: #000000;
+}
+
+p {font-family: Arial;
+   font-size: large;
+}
+
+.gotham{
+	font-family: Gotham;
+	}
+.italica{
+	font-style: italic;
+	}
+
+.opacidad{
+	opacity: 0.5;
+	}
+
+
+.marco1 {
+   padding:8px;
+   background-color: ##FFFFFF;
+   width: 200px;
+   
+}
+
+
+.imgovalo { 
+	border-radius: 30%;
+	}
+	
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+	</style>
+
    </head>
 
 
