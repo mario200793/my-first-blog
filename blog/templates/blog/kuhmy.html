@@ -115,6 +115,7 @@ Texto que vamos a poner en la pagina,Texto que vamos a poner en la pagina,Texto 
     </section>
 	
 	
+	
 	<footer class = "opacity centrado tamañotitulo">
   <i class="fa fa-facebook-official"></i>
    <!--<i class="fa fa-instagram "></i> 
@@ -123,7 +124,8 @@ Texto que vamos a poner en la pagina,Texto que vamos a poner en la pagina,Texto 
   <i class="fa fa-twitter "></i>
   <i class="fa fa-linkedin"></i>
 </footer>
-	
+
+<div> Django chicas Blog </div>{% for post in posts %} <div><p> publicado: {{ post.published_date }} </p>{{ post.title }} <p>{{ post.text|linebreaksbr }} </p></div>{% endfor %}
   </body>  
 
 
